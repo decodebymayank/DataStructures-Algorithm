@@ -84,8 +84,51 @@ int main()
     //Deque :- eaxctly similar to list and vector
     deque<int> deq;
 
-    
+    //Stack :- only three functions are there in stack
+    stack<int> st;
+    st.push(100);
+    st.push(2);
+    st.emplace(00);
 
+    //Queue
+    queue<int> q;
+    q.push(100);
+    q.push(2);
+    q.emplace(00);
+    
+    //Priority queue :- largest element will print at the top and inside it tree is maintained 
+    priority_queue<int> pq;
+    pq.push(21);
+    pq.push(662);
+    pq.push(123);
+    pq.pop();
+    pq.top();  // It will give maximum element
+
+    //Priority queue which stores minimum element
+    priority_queue<int, vector<int> , greater<int>> mpq;
+    mpq.push(21);
+    mpq.push(662);
+    mpq.push(123);
+    mpq.pop();
+    mpq.top();
+
+    //Set 
+    set<int> st;
+    st.push(213);
+    st.push(77);
+    st.push(90);
+
+    //Multiset
+    multiset<int> mt;
+    mt.insert(21);
+    mt.insert(10);
+
+    //Map
+    map<int,int> mp ;
+
+    mp.insert({2,4});
+
+    
 
 
 }
